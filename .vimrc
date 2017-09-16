@@ -39,6 +39,7 @@ map <F8> :NERDTreeToggle .<cr>
 
 " Show NERDTree on VIM start
 autocmd vimenter * NERDTree
+autocmd vimenter * wincmd l
 
 " Close VIM if only NERDTree left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
